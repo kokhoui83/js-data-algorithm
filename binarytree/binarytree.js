@@ -17,7 +17,7 @@ class BinaryTree {
 
     let focus = this.root
     while(true) {
-      if (focus.value > node.value) {
+      if (node.value < focus.value) {
         if (!focus.left) {
           focus.left = node
           return
@@ -54,8 +54,8 @@ class BinaryTree {
   preOrderTraversal (focus) {
     if (focus) {
       console.log(focus.value)
-      this.inOrderTraversal(focus.left)
-      this.inOrderTraversal(focus.right)
+      this.preOrderTraversal(focus.left)
+      this.preOrderTraversal(focus.right)
     }
   }
 

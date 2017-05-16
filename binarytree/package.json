@@ -1,0 +1,12 @@
+{
+  "name": "binarytree",
+  "version": "1.0.0",
+  "description": "JS implementation of binary tree",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "brian lim",
+  "license": "ISC"
+}
